@@ -10,7 +10,7 @@ namespace CG_ColorOfPixel
     {
         static void Main(string[] args)
         {
-            string[]splitInput=Console.ReadLine().Split(',');
+            var splitInput=Console.ReadLine().Split(',');
             var img=new Bitmap("p.png");
             var rgb=img.GetPixel(Convert.ToInt32(splitInput[0]),Convert.ToInt32(splitInput[1]));
             Console.WriteLine((.1f/255)*rgb.R+" , "+(.1f/255)*rgb.G+" , "+(.1f/255)*rgb.B);
